@@ -8,9 +8,9 @@ const schema = new mongoose.Schema({
 	author: mongoose.Schema.Types.String,
 	created_at: mongoose.Schema.Types.Date,
 	story_url: mongoose.Schema.Types.String,
-  url: mongoose.Schema.Types.String,
-  deleted: mongoose.Schema.Types.Date,
-  objectID: mongoose.Schema.Types.String
+	url: mongoose.Schema.Types.String,
+	deleted: mongoose.Schema.Types.Date,
+	objectID: mongoose.Schema.Types.String
 });
 
 module.exports = {
