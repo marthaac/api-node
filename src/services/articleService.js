@@ -7,6 +7,7 @@ class ArticleService {
 	constructor() {
         this.request = request;	
         this.config = config;	
+        this.article = Article;
     }
 
     getArticles(){       
