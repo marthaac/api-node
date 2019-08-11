@@ -18,7 +18,7 @@ class ArticleController {
     }
 
     async removeArticles(req, res, next) {
-        const id = req.body;
+        const id = req.params.id;
         try {
             await this.service.removeArticle(id);
             res.status(HttpStatus.NO_CONTENT).send();
