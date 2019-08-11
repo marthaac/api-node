@@ -9,7 +9,7 @@ const schema = new mongoose.Schema({
 	created_at: mongoose.Schema.Types.Date,
 	story_url: mongoose.Schema.Types.String,
 	url: mongoose.Schema.Types.String,
-	deleted: mongoose.Schema.Types.Date,
+	deleted: mongoose.Schema.Types.Boolean,
 	objectID: mongoose.Schema.Types.String
 });
 

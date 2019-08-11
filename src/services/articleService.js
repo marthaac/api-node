@@ -10,24 +10,30 @@ class ArticleService {
         this.model = Article.model;
     }
 
-    getArticles(){
-        return new Promise((resolve, reject) => {
-			this.model.find({ "deleted": { "$in": ["false",false] } }).sort('-created_at').exec().then(elements => {
-				const response = {
-					'count': elements.length,
-					'list': elements
-				};
-				resolve(response);
-			}).catch(err => reject(err));
-        });
+   async getArticles(){
+        try {
+            const elements = await this.model.find({ "deleted": { "$in": [false] } }).sort({'created_at': -1}).lean().exec();
+            const response = {
+                'count': elements.length,
+                'list': elements
+            };
+            return response;            
+        } catch (error) {
+            return {
+                'count': 0,
+                'list': []
+            };
+        }
     }
 
-	removeArticle(id) {
-        return new Promise((resolve, reject) => {
-            const filter = { objectID: id };
-            const update = { deleted: true };            
-            this.model.findOneAndUpdate(filter, update).exec().then(() => resolve()).catch(err => reject(err));
-		});
+	async removeArticle(id) {
+       try {
+        const filter = { objectID: id };
+        const update = { deleted: true };            
+        await this.model.findOneAndUpdate(filter, update).exec();
+       } catch (error) {
+           throw error;
+       }
 	}
 
     saveArticles(){       
