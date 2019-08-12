@@ -35,16 +35,16 @@ If the installation was successful, you should be able to run the following comm
 
 ## Getting started
 
-    - Clone this repo
-    - `npm install` to install all required dependencies
-    - Install MongoDB Community Edition and run it by executing `mongod`
-    - `npm run dev` to start the local server
+    - #### Clone this repo
+    - #### `npm install` to install all required dependencies
+    - #### Install MongoDB Community Edition and run it by executing `mongod`
+    - #### `npm run dev` to start the local server
 
 ## Code Overview
 
 ### Dependencies
-   [expressjs](https://expressjs.com/) - The server for handling and routing HTTP requests
-   [mongoose](https://mongoosejs.com/) - For modeling and mapping MongoDB data to javascript
+  - [expressjs](https://expressjs.com/) - The server for handling and routing HTTP requests
+  - [mongoose](https://mongoosejs.com/) - For modeling and mapping MongoDB data to javascript
 
 ### Application Structure
    - `app.js` - The entry point to our application. This file defines our express server and connects it to MongoDB using mongoose. It also requires the routes and models we'll be using in the application.
