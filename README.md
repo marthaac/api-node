@@ -22,7 +22,7 @@ Endpoints:
 
 You can also run this app as a Docker container:
 - Clone this repo
-- Install Docker
+- Install [Docker](https://docs.docker.com/install/)
 - Build and Run the Docker container locally:`docker-compose up --build`
 
 ## Code Overview
