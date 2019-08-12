@@ -11,10 +11,12 @@ Endpoints:
 
 ## Running Locally
 
+- Install [NodeJs](https://nodejs.org/es/download/)
+- Install [MongoDB Community Edition](https://docs.mongodb.com/manual/administration/install-community/) and run it by executing `mongod`
 - Clone this repo
+- Open a terminal in the root of the project 
 - `npm install` to install all required dependencies
-- Install MongoDB Community Edition and run it by executing `mongod`
-- `npm run dev` to start the local server
+- `npm start` to start the local server
 
 ## Use Docker
 
