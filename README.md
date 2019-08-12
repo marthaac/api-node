@@ -1,6 +1,6 @@
 # ArticlesBack
 
-This project is an api to provide the recently posted articles about Node.js on Hacker News.
+This project is an API to provide the recently posted articles about Node.js on Hacker News.
 
 This project was developed with Express which is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
@@ -58,6 +58,6 @@ If the installation was successful, you should be able to run the following comm
 
 Open `src/config.js` then edit it with your settings. You will need:
 
-- Batabase name (config.db);
+- Batabase name (config.db)
 
 
