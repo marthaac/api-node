@@ -35,10 +35,10 @@ If the installation was successful, you should be able to run the following comm
 
 ## Getting started
 
-- #### Clone this repo
-- #### `npm install` to install all required dependencies
-- #### Install MongoDB Community Edition and run it by executing `mongod`
-- #### `npm run dev` to start the local server
+- Clone this repo
+- `npm install` to install all required dependencies
+- Install MongoDB Community Edition and run it by executing `mongod`
+- `npm run dev` to start the local server
 
 ## Code Overview
 
